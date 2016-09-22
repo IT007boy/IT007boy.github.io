@@ -1,41 +1,105 @@
----
-layout: default
----
-
-
-<!-- Main -->
-<div id="main">
-    <section>
-        {% for post in site.posts limit:1 %}
-            <header class="major">
-                <h2>{{ post.title }}</h2>
-                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-            </header>
-
-            <section>
-                {{ post.content }}
-            </section>
-        {% endfor %}
-    </section>
-    <section>
-        <div class="row">
-            {% for post in site.posts offset:1 %}
-
-                <article class="{% cycle '6u', '6u$' %} 12u(small)">
-                    <header>
-                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    </header>
-                    <section>
-                        {{ post.excerpt }}
-                    </section>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="{{ post.url }}" class="button">Read More</a></li>
-                        </ul>
-                    </footer>
-                </article>
-
-            {% endfor %}
-        </div>
-    </section>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>my blog</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
+#myblog{}
+#middle{}
+#nav{width: 320px;position: absolute;left: 0;top: 0;height:100%;background-image: url(../image/navimage1.jpg);}
+.photo{width: 260px;height: 200px;margin: 60px auto 0 auto;}
+.photo .information a img{margin: 5px 55px;}
+.information img:hover{-webkit-transform:rotate(360deg) scale(1,1);-o-transform:rotate(360deg) scale(1,1);-mo-transform:rotate(360deg) scale(1,1);transform:rotate(360deg) scale(1,1);transition-duration:2s;-webkit-transition-duration:2s;-o-transition-duration:2s;-mo-transition-duration:2s;}
+.photo p{text-align: center;font:30px bold;font-weight: 6px;color:white;}
+.searchtext{border:1px solid gray;width:190px; height:25px;border-radius: 10px;}
+.search2{text-align: center;padding-top:30px; }
+.leftitem{font-size: 30px;text-align: center;}
+.leftitem ul{list-style-type: none;padding-top: 20px;}
+.leftitem li{width: 190px;height: 30px;margin: 10px auto;}
+.leftitem a{text-decoration: none;color: white;}
+.leftitem a:hover{display:block;background-color: black;border-radius: 20px;line-height: 30px;}
+#nav h3{text-align: center;font:30px bold ;color:#FFFAF0;font-weight: 4px;margin-top: 30px;}
+.information a img{border-radius: 100%;}
+#section{position: absolute;right: 0;top: 0;bottom: 0;left:320px;overflow: auto;background-image: url(../image/w.jpg);}
+.title1{border: 3px solid gray;width: 90%;height: 200px;overflow: hidden;margin: 20px 5% 20px 5%;display: inline-block;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);}
+.title1 img{padding: 25px 25px;float: left;}
+.title1 .writetitle1{}
+.title1 h1{padding: 25px 0 10px 0;}
+.title1 a{color: #5f5f5f;text-decoration: none;}
+.title1 p{}
+.title1 span{}
+#section .write{}
+#section .footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);text-align: center;}
+</style>
+</head>
+<body>
+<div id="myblog">
+<div id="middle">
+ 	<div id="nav">
+ 		<div class="photo">
+ 			<div class="information"><a href="index.html"><img src="../image/photo.jpg"></a></div>
+ 			<p>IT007boy</p>
+ 		</div>
+ 		<div class="search1">
+ 			<form class="search2">
+				<input type="text" name="searchtext" class="searchtext" placeholder="search" >
+				<input type="image" src="../image/search.jpg" style="width:25px; height:25px;position:absolute;+margin-top:1px;">
+			</form>	
+		<div class="leftitem">
+				<ul>
+ 				<li><a href="">于我</a></li>
+ 				<li><a href="">代码</a></li>
+ 				<li><a href="">前端</a></li>
+ 				<li><a href="">照片</a></li>
+ 			</ul>
+		</div>
+		<h3>start 2016.9.19</h3>
+	</div>
+ 	</div>
+ 	<div id="section">
+ 		<div class="write">
+ 			<div class="title1">
+ 				<a href=""><img src="../image/title1.jpg"></a>
+ 				<div class="writetitle1">
+ 				 	<h1><a href="">my blog's birthday</a></h1>
+ 					<p>最终写好了最简陋的博客页面，兼容性或许还不好，还需要很多完善的东西，数据库和php和js，但我会努力的</p>
+ 				</div>
+ 				<span></span>
+ 			</div>
+ 			<div class="title1">
+ 				<a href=""><img src="../image/title1.jpg"></a>
+ 				<div class="writetitle1">
+ 				 	<h1><a href="">my blog's birthday</a></h1>
+ 					<p>最终写好了最简陋的博客页面，兼容性或许还不好，还需要很多完善的东西，数据库和php和js，但我会努力的</p>
+ 				</div>
+ 				<span></span>
+ 			</div>
+ 			<div class="title1">
+ 				<a href=""><img src="../image/title1.jpg"></a>
+ 				<div class="writetitle1">
+ 				 	<h1><a href="">my blog's birthday</a></h1>
+ 					<p>最终写好了最简陋的博客页面，兼容性或许还不好，还需要很多完善的东西，数据库和php和js，但我会努力的</p>
+ 				</div>
+ 				<span></span>
+ 			</div>
+ 			<div class="title1">
+ 				<a href=""><img src="../image/title1.jpg"></a>
+ 				<div class="writetitle1">
+ 				 	<h1><a href="">my blog's birthday</a></h1>
+ 					<p>最终写好了最简陋的博客页面，兼容性或许还不好，还需要很多完善的东西，数据库和php和js，但我会努力的</p>
+ 				</div>
+ 				<span></span>
+ 			</div>
+ 		</div>
+ 		<div class="footer">
+ 				<p>That I exist is a perpetual surprise which is life.</p>
+ 				<p>thanks for everybody.</p>
+ 				<p>I try my best to enjoy life.</p>
+ 		</div>
+ 	</div>
 </div>
+</div>
+</body>
+</html>
