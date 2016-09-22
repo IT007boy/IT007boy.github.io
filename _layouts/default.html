@@ -1,21 +1,37 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-    {% include /head.html %}
-    <body>
-        <div id="wrapper">
-        {% include /header.html %}
 
-            <!-- Main -->
-            <div id="main">
-                {{ content }}
+{% include head.html %}
 
-            </div>
-            {% include /footer.html %}
-		</div>
-	</body>
+<body>
+
+<div class="container">
+
+  {% include header.html %}
+
+  {% if site.default_column == "two" %}  
+
+  <div class="page-content col-sm-8">
+    {{ content }}
+    {% include post_pagination.html %}
+  </div>
+  {% include sidebar.html %}
+
+  {% else %}
+
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </div>
+  {% include post_pagination.html %}
+
+  {% endif %}
+
+  {% include footer.html %}
+
+</div>
+
+</body>
+
 </html>

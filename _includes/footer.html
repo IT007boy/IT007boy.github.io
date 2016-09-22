@@ -1,11 +1,13 @@
-<!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <ul class="copyright">
-                <li>&copy; Untitled. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                <li>Demo Images: <a href="https://unsplash.com/">Unsplash</a></li>
-                <li>Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a></li>
-            </ul>
-        </div>
-    </section>
+<footer class="site-footer">
+
+  <p>Copyright &copy; <a href="{{ site.baseurl }}/">{{site.title}}</a></p>
+  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
+  on 
+  {% if site.github_username %}
+  <a href="https://github.com/">Github</a>
+  {% else %}
+  GitHub 
+  {% endif %}
+  | Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="http://yulijia.net">Lijia Yu</a>  
+
+</footer>

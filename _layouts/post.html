@@ -1,24 +1,35 @@
 ---
 layout: default
 ---
-<section>
-    <div class="container">
-        <header class="major">
-            <h2>{{ page.title }}</h2>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        </header>
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <section class="post-content">
-            {{ content }}
-        </section>
-        
-        <footer>
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
-            {% if page.next %}
-            <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
-        </footer>
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
+    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+    <p class="post-meta">
+    {{ site.locales[site.default_locale].PostedInCategories }}
+    {% for cat in page.categories %}
+    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == cat %}, {% endunless %}
+    {% endfor %} 
+    {% if page.tags != empty %}
+    {{ site.locales[site.default_locale].Taggedwith }}
+    {% for tag in page.tags %}
+    <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
+    {% endfor %}
+    {% endif %}
+    <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    </p>
+  </header>
 
-    </div>
+  <article class="post-content" itemprop="articleBody">
+    {{ content }}
+  </article>
+  <hr />
+</div>
 
-</section>
+
+{% include page_pagination.html%}
+{% include comments.html %}
+
