@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-{% include head.html %}
+  {% include head.html %}
 
-<head>
-{% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url={{ site.baseurl }}/journal" />{% endif %}
-</head>
+  <body>
 
-<body>
+    {% include header.html %}
 
-    {% include nav.html %}
+    <div class="page-content">
+        {{ content }}
+    </div>
 
-    {{ content }}
-
-    {% include search.html %}
-
-    {% include newsletter.html %}
-
-    {% include footer.html %}
-
-   {% include Scroll_to_Top.html %}  
-
-</body>
+  </body>
 
 </html>
