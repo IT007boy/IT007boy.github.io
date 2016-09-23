@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>my blog</title>
+<script type="text/javascript">
+	function forme(){
+		document.getElementById('forme').style.display="block";
+		document.getElementById('write').style.display="none";
+		document.getElementById('footer').style.display="none";
+	}
+</script>
 <style type="text/css">
 *{padding: 0;margin: 0;}
 html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
@@ -30,8 +37,17 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 .title1 a{color: #5f5f5f;text-decoration: none;}
 .title1 p{}
 .title1 span{}
-#section .write{}
-#section .footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);text-align: center;}
+#write{display: block;}
+#forme {display: none;}
+.formebeimian{width: 300px;height:830px;background-color:  rgb(210,220,250);}
+.formebeimian img{border: 3px solid  rgb(210,220,250);margin: 20px auto;display: block;}
+.formebeimian p,h3{font:20px bold ;font-weight: 4px;line-height: 1.5em;text-align:left;padding-left: 40px; }
+.formestudycs{position: absolute;left:300px;top:10px;}
+.formestudycs h1{text-align: center;padding-top: 10px;font-size: 40px;}
+.formestudycs img{margin-left:180px;}
+.formestudycs p{font-size: 25px;padding-top: 10px;color:black;}
+.formestudycs h3{margin-top:10px;margin-bottom:10px;margin-left:150px;font-size: 30px;color: #FFFAF0;}
+#footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);text-align: center;}
 </style>
 </head>
 <body>
@@ -39,7 +55,7 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 <div id="middle">
  	<div id="nav">
  		<div class="photo">
- 			<div class="information"><a href="index.html"><img src="images/photo.jpg"></a></div>
+ 			<div class="information"><a onclick="forme()"><img src="images/photo.jpg"></a></div>
  			<p>IT007boy</p>
  		</div>
  		<div class="search1">
@@ -49,7 +65,7 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 			</form>	
 		<div class="leftitem">
 				<ul>
- 				<li><a href="">于我</a></li>
+ 				<li><a href="index.html" >首页</a></li>
  				<li><a href="">代码</a></li>
  				<li><a href="">前端</a></li>
  				<li><a href="">照片</a></li>
@@ -59,7 +75,7 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 	</div>
  	</div>
  	<div id="section">
- 		<div class="write">
+ 		<div id="write">
  			<div class="title1">
  				<a href=""><img src="images/title1.jpg"></a>
  				<div class="writetitle1">
@@ -93,7 +109,22 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
  				<span></span>
  			</div>
  		</div>
- 		<div class="footer">
+ 		<div id="forme" >
+ 			<div class="formebeimian">
+ 				<img src="images/formeimg.jpg">
+ 				<h3>My name:杯面</h3>
+ 				<p>在读于：<strong>广东医学院</strong><br>专业：<strong>临床医学</strong><br>梦想：<strong>编写自己的智能家居系统</strong><br>就职意愿：<strong>全栈工程师</strong><br>my guthub:<a href="https://it007boy.github.io/">it007boy</a></p>
+ 				
+ 			</div>
+ 			<div class="formestudycs">
+ 				<h1>医学生的自学全栈之纪事</h1>
+ 				<p><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;</span>2016年的暑假，读医路上非常艰苦，坚持着结束了一学期痛苦的背书生活。那时我在想，我喜欢医学么？才发现一直读医是家人的梦想，工作稳定，后期待遇好。家人的期望我理解，所以才忍着背书的痛苦读了两年。越了解越不适合，这是我得出的结果。于是趁暑假有空买了一本C&nbsp; primer&nbsp; plus。结果一发不可收拾，本来想打算学好各种基础，但觉得如果拿不出一点成绩是无法和爸妈说明我能够做到很好。于是查找了大量资料，并分析数据结合我自身的喜好选择了web前端或者后端入门。这里感谢知乎的大牛和各个博客的博主们，提供的资料够我学习很久很久。（如果需要前后端入门资料的可加我微信cptptnmgp）虽然还是很渣，但努力学习中。对于我来说编程是一件美妙的事，maybe我是INTP，好奇心，偷懒都具备。梦想总是有的，万一实现了呢。在这条路上，希望遇到很多很多技术类的朋友。<br><h3>下图为我们班外科洗手的图</h3></p>
+ 				<img src="images/forme.jpg">
+ 				<p><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;</span>这是我自己建立的第一个blog
+ 				，用来记录我的学习过程。同时在努力学习英语，英语差的boy。<br><br>&nbsp;&nbsp;兴趣是最好的老师，苍井 そら第二。</p>
+ 			</div>
+ 		</div>
+ 		<div id="footer">
  				<p>That I exist is a perpetual surprise which is life.</p>
  				<p>thanks for everybody.</p>
  				<p>I try my best to enjoy life.</p>
