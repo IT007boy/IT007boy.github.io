@@ -25,14 +25,14 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 .title1 p{}
 .title1 span{}
 #write{display: block;}
-#forme {display: none;}
-.formebeimian{width: 300px;height:845px;background-color:  rgb(210,220,250);}
+#forme {display: none;border-color: rgb(210,220,250);}
+.formebeimian{width: 200px;height:845px;}
 .formebeimian img{border: 3px solid  rgb(210,220,250);margin: 20px auto;display: block;}
 .formebeimian p,h3{font:20px bold ;font-weight: 4px;line-height: 1.5em;text-align:left;padding-left: 40px; }
-.formestudycs{position: absolute;left:300px;top:10px;background-color:  rgb(210,220,250);}
+.formestudycs{position: absolute;left:300px;top:10px;}
 .formestudycs h1{text-align: center;padding-top: 20px;font-size: 40px;}
 .formestudycs img{margin-left:180px;}
 .formestudycs p{font-size: 25px;padding-top: 10px;color:black;}
 .formestudycs h3{margin-top:10px;margin-bottom:10px;margin-left:150px;font-size: 30px;color:rgb(21,20,18);}
-#footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);text-align: center;}
+#footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;color:rgb(21,20,18);text-align: center;background-color:rgb(210,220,250);}
 #music{display: none;}
