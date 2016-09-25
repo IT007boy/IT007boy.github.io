@@ -35,3 +35,4 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 .formestudycs p{font-size: 25px;padding-top: 10px;color:black;}
 .formestudycs h3{margin-top:10px;margin-bottom:10px;margin-left:150px;font-size: 30px;color:rgb(21,20,18);}
 #footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);text-align: center;}
+#music{display: none;}
