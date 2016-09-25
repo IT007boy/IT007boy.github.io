@@ -2,7 +2,7 @@
 html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 #myblog{}
 #middle{}
-#nav{width: 320px;position: absolute;left: 0;top: 0;height:600px;background-image: url(../images/navimage1.jpg);background-repeat: no-repeat;}
+#nav{width: 320px;position: absolute;left: 0;top: 0;height:100%;background-image: url(../images/navimage1.jpg);background-repeat: no-repeat;}
 .photo{width: 260px;height: 200px;margin: 60px auto 0 auto;}
 .photo .information a img{margin: 5px 55px;}
 .information img:hover{-webkit-transform:rotate(360deg) scale(1,1);-o-transform:rotate(360deg) scale(1,1);-mo-transform:rotate(360deg) scale(1,1);transform:rotate(360deg) scale(1,1);transition-duration:2s;-webkit-transition-duration:2s;-o-transition-duration:2s;-mo-transition-duration:2s;}
