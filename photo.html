@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>my blog</title>
 <style type="text/css">
-body{margin:0; font-family:微软雅黑;} 
-#flow-box{margin:10px auto 0 auto; padding:0; position:relative;background-color:rgb(210,220,250);} 
-#flow-box li{ width:300px; position:absolute; padding:10px; border:solid 1px #efefef; list-style:none; 
+body{margin:0; font-family:微软雅黑;background-color:rgb(210,220,250);} 
+#flow-box{margin:10px auto 0 auto; padding:0; position:relative;} 
+#flow-box li{ width:200px; position:absolute; padding:5px; border:solid 8px #9FBBFF;border-radius: 8px;box-shadow: 3px 3px 3px; list-style:none; 
 opacity:0; 
 -moz-opacity:0; 
 filter:alpha(opacity=0); 
@@ -21,7 +21,7 @@ transition:opaicty 500ms ease-in-out;}
 </head>
 <body>
 <ul id="flow-box">
-	<li><img src="images/flow-box/1.jpg"><a href="">www</a></li>
+	<li><img src="images/flow-box/1.jpg"><a href=""></a></li>
 	<li><img src="images/flow-box/2.jpg"><a href=""></a></li>
 	<li><img src="images/flow-box/3.jpg"><a href=""></a></li>
 	<li><img src="images/flow-box/4.jpg"><a href=""></a></li>
@@ -117,8 +117,8 @@ oArr[x] = lenArr[i] + oArr[x] + 10;
 document.getElementById("loadimg").style.top = _getMaxValue(oArr) + 50 + "px";//loading向下移位 
 liLen = liLenNew; 
 window.onscroll = scroll;//执行完成，恢愎onscroll事件 
-}); 
-}) 
+});
+})
 } 
 } 
 window.onscroll =scroll; 
