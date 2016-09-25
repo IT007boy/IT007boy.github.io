@@ -2,10 +2,10 @@
 html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 #myblog{}
 #middle{}
-#nav{width: 100%;position: absolute;left: 0;top: 0;height:600px;background-image: url(../images/navimage1.jpg);background-repeat: no-repeat;}
-.photo{width: 260px;height: 200px;margin: 60px auto 0 auto;}
+#nav{width: 100%;height:600px;background-image: url(../images/navimage1.jpg);background-repeat: no-repeat;}
+.photo{width: 260px;height: 200px;margin: 0 auto;padding-top: 60px;}
 .photo .information a img{margin: 5px 55px;}
-.information img:hover{-webkit-transform:rotate(360deg) scale(1,1);-o-transform:rotate(360deg) scale(1,1);-mo-transform:rotate(360deg) scale(1,1);transform:rotate(360deg) scale(1,1);transition-duration:2s;-webkit-transition-duration:2s;-o-transition-duration:2s;-mo-transition-duration:2s;height: 600px;}
+.information img:hover{-webkit-transform:rotate(360deg) scale(1,1);-o-transform:rotate(360deg) scale(1,1);-mo-transform:rotate(360deg) scale(1,1);transform:rotate(360deg) scale(1,1);transition-duration:2s;-webkit-transition-duration:2s;-o-transition-duration:2s;-mo-transition-duration:2s;}
 .photo p{text-align: center;font:30px bold;font-weight: 6px;color:white;}
 .searchtext{border:1px solid gray;width:190px; height:25px;border-radius: 10px;}
 .search2{text-align: center;padding-top:30px; }
@@ -16,7 +16,7 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 .leftitem a:hover{display:block;background-color: black;border-radius: 20px;line-height: 30px;}
 #nav h3{text-align: center;font:30px bold ;color:#FFFAF0;font-weight: 4px;margin-top: 30px;}
 .information a img{border-radius: 100%;}
-#section{background-image: url(../images/w.jpg);background-repeat:repeat-y;margin-top:600px; }
+#section{background-image: url(../images/w.jpg);background-repeat:repeat-y;width: 100%}
 .title1{border: 3px solid gray;width: 100%;height: 100px;overflow: hidden;margin: 10px 0;display: inline-block;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;background-color: rgb(210,220,250);color:rgb(21,20,18);}
 .title1 img{padding: 10px 10px;float: left;width: 80px;height: 80px;}
 .title1 .writetitle1{}
