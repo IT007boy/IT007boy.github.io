@@ -36,3 +36,4 @@ html,body,#myblog{height: 100%;font:1em/24px bold Tahoma, sans-serif;}
 .formestudycs h3{margin-top:10px;margin-bottom:10px;margin-left:150px;font-size: 30px;color:rgb(21,20,18);}
 #footer{height: 80px;: 3px solid gray;border-radius: 10px;font-family: Arial, Helvetica, sans-serif;color:rgb(21,20,18);text-align: center;background-color:rgb(210,220,250);}
 #music{display: none;}
+#catimage{position: fixed;}//固定位置
