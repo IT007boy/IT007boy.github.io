@@ -6,31 +6,7 @@
 <title>my blog</title>
 <link rel="stylesheet" type="text/css" href="css/320.css" media="only screen and (max-width:640px)">
 <link  type="text/css" href="css/main.css" rel="stylesheet"  media="only screen and (min-width:640px),">
-<script type="text/javascript">
-var zero=0;
-var imageLeft=0;//初始化
-var imageTop=0;
-var mycat=["images/cat/1.jpg","images/cat/2.jpg","images/cat/3.jpg","images/cat/4.jpg","images/cat/5.jpg","images/cat/6.jpg","images/cat/7.jpg","images/cat/8.jpg","images/cat/9.jpg","images/cat/10.jpg","images/cat/11.jpg","images/cat/12.jpg","images/cat/13.jpg","images/cat/14.jpg","images/cat/15.jpg","images/cat/16.jpg","images/cat/17.jpg","images/cat/18.jpg",]
-//对图片进行数组处理排序
-function cata (){
-	var catimage=document.getElementById('catimage');
-	var catimagebox=document.getElementById('catimagebox');//得到对应的id
-	if (zero==mycat.length-1) {zero=0;catimage.src=mycat[zero];}
-		else{zero+=1;catimage.src=mycat[zero];
-			if(zero<=6){imageLeft+=Math.random()*30;catimagebox.style.marginLeft=imageLeft+"px";}//随机数控制距离和margin控制方向
-			if(zero<=12&&zero>6){imageTop-=Math.random()*10;catimagebox.style.marginTop=imageTop+"px";}
-			if(zero<=18&&zero>12){imageTop+=Math.random()*30;catimagebox.style.marginTop=imageTop+"px";}
-		}
-}
-setInterval("cata()",300);//控制时间
-</script>
-<script type="text/javascript">
-	function forme(){
-		document.getElementById('forme').style.display="block";
-		document.getElementById('write').style.display="none";
-		document.getElementById('footer').style.display="none";
-	}
-</script>
+<script src="main.js"></script>
 </head>
 <body>
 <div id="myblog">
@@ -112,13 +88,6 @@ setInterval("cata()",300);//控制时间
  				<p>I try my best to enjoy life.</p>
  		</div>
  		<audio src="music/mp3/Everytime.mp3" controls="controls" id="music"></audio>
- 		<script type="text/javascript">
- 			window.onload=function(){
- 				var music=document.getElementById("music");
- 				if (music.pause()) {music.play()}
- 					else{music.play()}
- 			}
- 		</script>
  	</div>
 </div>
 <div id="catimagebox"><img src="" id="catimage" alt=""></div>

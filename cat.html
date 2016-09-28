@@ -6,16 +6,16 @@
 var zero=0;
 var imageLeft=0;//初始化
 var imageTop=0;
-var mycat=["images/cat/1.jpg","images/cat/2.jpg","images/cat/3.jpg","images/cat/4.jpg","images/cat/5.jpg","images/cat/6.jpg","images/cat/7.jpg","images/cat/8.jpg","images/cat/9.jpg","images/cat/10.jpg","images/cat/11.jpg","images/cat/12.jpg","images/cat/13.jpg","images/cat/14.jpg","images/cat/15.jpg","images/cat/16.jpg","images/cat/17.jpg","images/cat/18.jpg",]
+var mycat=["images/cat/1.png","images/cat/2.png","images/cat/3.png","images/cat/4.png","images/cat/5.png","images/cat/6.png","images/cat/7.png","images/cat/8.png","images/cat/9.png","images/cat/10.png","images/cat/11.png","images/cat/12.png","images/cat/13.png","images/cat/14.png","images/cat/15.png","images/cat/16.png","images/cat/17.png","images/cat/18.png",]
 //对图片进行数组处理排序
 function cata (){
 	var catimage=document.getElementById('catimage');
 	var catimagebox=document.getElementById('catimagebox');//得到对应的id
 	if (zero==mycat.length-1) {zero=0;catimage.src=mycat[zero];}
 		else{zero+=1;catimage.src=mycat[zero];
-			if(zero<=6){imageLeft+=Math.random()*30;catimagebox.style.marginLeft=imageLeft+"px";}//随机数控制距离和margin控制方向
-			if(zero<=12&&zero>6){imageTop-=Math.random()*10;catimagebox.style.marginTop=imageTop+"px";}
-			if(zero<=18&&zero>12){imageTop+=Math.random()*30;catimagebox.style.marginTop=imageTop+"px";}
+			if(zero<=6){if (imageLeft>=document.documentElement.clientWidth) {imageLeft==0;}imageLeft+=Math.random()*80;catimagebox.style.marginLeft=imageLeft+"px";}//随机数控制距离和margin控制方向
+			if(zero<=12&&zero>6){if(imageLeft==0){imageTop=0;}imageTop-=Math.random()*10;catimagebox.style.paddingTop=imageTop+"px";}
+			if(zero<=18&&zero>12){if(imageLeft==0){imageTop=0;}imageTop+=Math.random()*30;catimagebox.style.paddingTop=imageTop+"px";}
 		}
 }
 setInterval("cata()",300);//控制时间
@@ -26,6 +26,6 @@ setInterval("cata()",300);//控制时间
 </style>
 </head>
 <body>
-	<div id="catimagebox"><img src="" id="catimage" alt=""></div>
+	<div id="catimagebox"><img src="" id="catimage" alt="sss"></div>
 </body>
 </html>
