@@ -13,13 +13,13 @@ function cata (){
 			if(zero<=18&&zero>12){if(imageTop>=document.body.clientHeight){imageTop=0;catimagebox.style.paddingTop=0+"px";}imageTop+=Math.random()*40;catimagebox.style.paddingTop=imageTop+"px";}
 		}
 }
-setInterval("cata()",200);//控制时间
 	function forme(){
 		document.getElementById('forme').style.display="block";
 		document.getElementById('write').style.display="none";
 		document.getElementById('footer').style.display="none";
 	}
 window.onload=function(){
+				setInterval("cata()",300);//控制时间
  				var music=document.getElementById("music");
  				if (music.pause()) {music.play()}
  					else{music.play()}
